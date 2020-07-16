@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>标题</title>
+    <style>
+        .tab {
+            width: 1200px;
+            height: 575px;
+            margin: 10px auto;
+            background-color: #096;
+        }
+        
+        .text {
+            float: left;
+            width: 300px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            line-height: 75px;
+            font-family: "楷体";
+            font-size: 18px;
+            font-weight: bold;
+            background: url(images/bg1.png) no-repeat center;
+        }
+        
+        .pic {
+            height: 575px;
+            background-image: url(images/p1.png);
+            transition: 1s;
+        }
+        
+        .text:hover {
+            background-image: url(images/bg2.png);
+            color: #FCC63D;
+        }
+        
+        .text:nth-child(2):hover~.pic {
+            background-image: url(images/p2.png);
+        }
+        
+        .text:nth-child(3):hover~.pic {
+            background-image: url(images/p3.png);
+        }
+        
+        .text:nth-child(4):hover~.pic {
+            background-image: url(images/p4.png);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 存放给用户看的内容  -->
+    <div class="tab">
+        <a class="text" href="http://tx3.163.com/fab" target="_blank">全新剧情</a>
+        <a class="text" href="http://tx3.163.com/fab" target="_blank">全新动态地图</a>
+        <a class="text" href="http://tx3.163.com/fab" target="_blank">全新战场</a>
+        <a class="text" href="http://tx3.163.com/fab" target="_blank">全新社交</a>
+        <div class="pic"></div>
+    </div>
+</body>
+
+</html>
